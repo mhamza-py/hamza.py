@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hamza | Data Analyst</title>
+  <style>
+    :root {
+      --dark: #0a0a0a;
+      --light: #f5f5f5;
+      --accent: #ffd700;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: var(--dark);
+      color: var(--light);
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      background-color: #111;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: var(--light);
+      margin-left: 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      background: radial-gradient(circle at top, #222, #000);
+      color: var(--light);
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: var(--accent);
+      animation: slideInDown 1.2s ease-out;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      margin-top: 1rem;
+      animation: fadeInUp 2s ease-out;
+    }
+
+    section {
+      padding: 3rem 1rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--accent);
+      border-left: 4px solid var(--accent);
+      padding-left: 0.5rem;
+    }
+
+    .about-img-box {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .about-img-box img {
+      max-width: 300px;
+      border-radius: 10px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .feature {
+      background-color: #1a1a1a;
+      padding: 1.5rem;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .feature:hover {
+      transform: scale(1.03);
+    }
+
+    .feature h3 {
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .project-grid img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .newsletter {
+      margin-top: 2rem;
+    }
+
+    .newsletter input[type="email"] {
+      padding: 0.5rem;
+      width: 70%;
+      max-width: 300px;
+      border-radius: 5px;
+      border: none;
+      margin-right: 0.5rem;
+    }
+
+    .newsletter button {
+      padding: 0.5rem 1rem;
+      background-color: var(--accent);
+      color: black;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    form {
+      background: #1a1a1a;
+      padding: 2rem;
+      border-radius: 10px;
+      margin-top: 2rem;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin: 0.5rem 0;
+      border: none;
+      border-radius: 5px;
+    }
+
+    form button {
+      padding: 0.7rem 1.5rem;
+      background-color: var(--accent);
+      color: black;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #111;
+      color: #aaa;
+    }
+
+    footer a {
+      color: var(--accent);
+      margin: 0 0.5rem;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .about-img-box {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideInDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div><strong>Hamza</strong></div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Hamza</h1>
+    <p>Data Analyst | Turning Data Into Insights</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-img-box">
+      <img src="https://github.com/mhamza-py/hamza.py/blob/main/profile.jpeg?raw=true" alt="Profile">
+      <p>
+        I am a data analyst passionate about uncovering actionable insights through data.
+        My goal is to help organizations make evidence-based decisions using clean visuals and impactful reports.
+        I specialize in visual analytics, storytelling dashboards, and data communication using tools like Power BI and Python.
+      </p>
+    </div>
+
+    <div class="features">
+      <div class="feature">
+        <h3>Collect</h3>
+        <p>Strong background in survey design, data entry, and real-time data collection using tools like Kobo Toolbox and Airtable.</p>
+      </div>
+      <div class="feature">
+        <h3>Process</h3>
+        <p>Skilled in data cleaning, transformation, and exploratory analysis using Python, SQL, and Excel to uncover trends.</p>
+      </div>
+      <div class="feature">
+        <h3>Visualise</h3>
+        <p>Capable of designing interactive dashboards and reports in Power BI, Google Data Studio, and Tableau.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Project Showcase</h2>
+    <div class="project-grid">
+     <img src="https://github.com/mhamza-py/hamza.py/blob/main/salesdashboard.jpg?raw=true" alt="Sales Dashboard">
+      <img src="https://github.com/mhamza-py/hamza.py/blob/main/analysis.jpg?raw=true" alt="Customer Analysis">
+      <img src="https://github.com/mhamza-py/hamza.py/blob/main/surveyform.jpg?raw=true" alt="Survey Insights">
+      <img src="https://github.com/mhamza-py/hamza.py/blob/main/report.jpg?raw=true" alt="Executive Report">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formsubmit.co/contactushamza@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Name" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <textarea name="message" rows="4" placeholder="Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+
+    <div class="newsletter">
+      <h3 style="color: var(--accent);">Subscribe to Newsletter</h3>
+      <form action="https://docs.google.com/forms/d/e/1FAIpQLSfYourFormLink/viewform" method="POST" target="_blank">
+        <input type="email" name="email" placeholder="Enter your email" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Hamza. All rights reserved.</p>
+    <p>
+      <a href="https://www.linkedin.com/in/muhammadhamza9" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/mhamza-py" target="_blank">GitHub</a>
+    </p>
+  </footer>
+</body>
+</html>
