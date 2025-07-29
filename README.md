@@ -14,7 +14,7 @@ This is a clean and responsive personal portfolio website created using HTML, CS
 ![Screenshot 2](./ss2.png)
 ![Screenshot 3](./ss3.png)
 
-> 📌 *Make sure these image files (`screenshot1.jpg`, etc.) are uploaded in the root of your repo.*
+
 
 ---
 
