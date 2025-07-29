@@ -10,7 +10,7 @@ This is a clean and responsive personal portfolio website created using HTML, CS
 
 ## 📸 Screenshots
 
-![Screenshot 1](./ss1.png")
+![Screenshot 1](./ss1.png)
 ![Screenshot 2](./ss2.png)
 ![Screenshot 3](./ss3.png)
 
